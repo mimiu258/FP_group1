@@ -4,14 +4,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("../images/Background_Image.jpg");
+            background-color:rgba(255, 255, 255, 0.7);
+            border-radius: 20;
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
+    <!--header version 1-->
     <section class="gridHeader">
         <div id="logo" class="headerGridArea">
             <button type="button" class="logoHome">
-                <img src="" alt="logo">
+                <img src="../images/Logo.png" alt="logo" style="height: 70px; margin: 3px 20px;">
             </button>
         </div>
         <div id="flexNav" class="headerGridArea">
@@ -23,94 +35,137 @@
             </ul>
         </div>
         <div id="upperRight" class="headerGridArea">
-            <button type="button" class="getHelpBtn">
+            <button type="button" class="getHelpBtn" style="background-color: transparent; border: 1px solid white; color: white;">
                 Get professional help
             </button>
             <li><a href="#" style="font-size: 15px;">Sign-in</a></li>
             <li><a href="#">Help</a></li>
         </div>
         <div id="lowerRight" class="headerGridArea">
-            <button type="button" class="seachIcon">
-                <img src="../images/search-icon.png" style="height: 50px;">
+            <button type="button" class="seachIcon" style="border: none; background-color:transparent;">
+                <img src="../images/searchWhite.png" style="height: 30px; margin: 0 3%;">
             </button>
         </div>
     </section>
+<!--breadcrumb-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <i class="bi bi-house-door-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </svg>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Articles</li>
+        </ol>
+    </nav>
 <!--I just make the border to see how large the hero section would be-->
     <section class="hero">
         <h2> Articles</h2>
-        <p> Lorem ipsum dolor sit amet, cum eu idque omnium, an qui sale elitr vocibus, nam equidem accusata ei. Essent argumentum ex vel...</p>
-        <div class= "artsearch">
-            <input type="text" placeholder="Find Articles..">
-            <button type="submit" class="searchbarbtn">
-                    <img src="../images/search-icon.png" style="height:50px">
-            </button>
-        </div>
-        <div class= "filter">
-            <div>
-                <ul class= "quickfilter">
-                    <li style="padding: 5px">Quick Search:</li>
-                    <li class="quickopt">Anxiety</li>
-                    <li class="quickopt">Depression</li>
-                    <li class="quickopt">Stress</li>
-                    <li class="quickopt">Eating-Disorder</li>
-                </ul>
+        <p> Here at MindLine we believe that raising awareness of mental health and wellness.</p>
+        <div class="fp-tableCell">
+            <div class="container">
+                <div class="search_section">
+                    <form role="search" method="get" class="search-form formsub" >
+                        <div class="searchform_wrapper">
+                            <span class="search-icon"><i class="fa fa-search"></i></span>
+            
+                            <input type="search" id="" class="search-field av-input-hasicon"
+                             placeholder="Find yoga videos..." name="s">
+                            <input type="submit" class="button buttonsubmit" id="buttonsubmit" value="SEARCH">
+                        </div>
+                    </form>
+                    <div class="quick-search">
+                        <h4 style="font-size: 15px; font-weight: bold;">Quick Search</h4>
+                        <ul>
+                            <li><a href="#">Hatha</a></li>
+                            <li><a href="#">Restorative</a></li>
+                            <li><a href="#">Meditation</a></li>
+                            <li><a href="#">Vinyasa</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <h3 style="margin: 1% auto;padding: 20px;font-size: 20px;">New Articles</h3>
-    <div class="container">
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
-            <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
+    <h3 style="margin: 1% auto;padding: 20px; padding-left: 40px; font-size: 20px;">New Articles</h3>
+    <div id="background">
+        <div class="container">
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
+                <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
+                <a href="https://www.verywellmind.com/the-1-key-to-work-life-balance-according-to-a-life-coach-5201851" class="btn btn-primary">Read Article</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
+                <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
+                <a href="https://www.verywellmind.com/how-important-is-alone-time-for-mental-health-5184607" class="btn btn-primary">Read Article</a>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
-            <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
+                <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
+                <a href="#" class="btn btn-primary">Read Article</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
+                <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
+                <a href="#" class="btn btn-primary">Read Article</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
+                <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
+                <a href="#" class="btn btn-primary">Read Article</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
+                <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
+                <a href="#" class="btn btn-primary">Read Article</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
-            <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
-            <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/INNn5hk2ZJz1FnF8pJ684CBzDiY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1302325694-bc8f96a96ee14e03acdbef4033d4bd89.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">The Number 1 Key to Work-Life Balance, According to a Life Coach</h5>
-            <p class="card-text">Work-life balance has become one of the most common topics people have asked about lately. I think this is because so much of our lives has been in flux...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://www.verywellmind.com/thmb/MCM6OQwXcNNdCPxXKcQu1eClhM0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/How-important-is-alone-time-for-mental-health-5184607-V1-8dd83a7d84e148b68f350178f2082547.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">How Important is Alone Time for Mental Health?</h5>
-            <p class="card-text">Finding time to be alone can have a number of key benefits. Some of these include: Personal exploration, Creativity, Social energy...</p>
-            <a href="#" class="btn btn-primary">Read Article</a>
-            </div>
-        </div>
+    <div class="pagination">
+        <ul class="page-numbers">
+            <li><span aria-current="page" class="page-numbers current">1</span></li>
+            <li><a class="page-numbers" href="#">2</a></li>
+            <li><a class="page-numbers" href="#">3</a></li>
+            <li><span class="page-numbers dots">...</span></li>
+            <li><a class="page-numbers" href="#">7</a></li>
+            <li><a class="next page-numbers" href="#">Next</a></li>
+        </ul>
+    </div> 
+    <!--Feedback section-->
+    <div id="feedback">
+        <img style="height: 200px;" src="../images/feedback.png">
+        <p style="text-align: center; margin-bottom: 10px; color:#2F6174; font-size: 15px;">
+            We’re happy when seeing you improving the mental life
+        <br>and<br>
+        We would love to improve ourself as well!
+        </p>
+        <button type="button" style=" margin: 10px 0;font-size: 15px; padding: 2%;border: 1px solid #2F6174;color: #2F6174; font-size: 15px; background-color: transparent;">
+        Give Feedback
+        </button>
     </div>
 <footer></footer>
 </body>
