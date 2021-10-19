@@ -1,6 +1,7 @@
 /*Text Fonts*/
-H3{ font-size: 20px !important;
-}
+/*H3{ 
+    ;
+}*/
 button{
     border: none;
     background-color: transparent;
@@ -18,6 +19,34 @@ li{
     list-style: none;
     margin: 0 10px 0 10px;
     font-size: 15
+}
+/*Breadcrumb*/
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 0rem;
+    list-style: none;
+    background-color: transparent;
+    border-radius: .1875rem
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .4rem
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 1.1rem;
+    color: #434343;
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+}
+.breadcrumb-item+.breadcrumb-item:hover::before {
+    text-decoration: underline
+}
+.breadcrumb-item+.breadcrumb-item:hover::before {
+    text-decoration: none
+}
+.breadcrumb-item.active {
+    color: #6C757D
 }
 /*Background*/
 #background{
@@ -99,6 +128,16 @@ li{
     padding: 10px;
 
 }
+.containerhead{
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 18%;
+    margin-right: auto;
+    margin-left: auto;
+}
 .container{
     display:flex;
     flex-wrap: wrap;
@@ -156,8 +195,8 @@ li{
     .searchform_wrapper .button:hover{background:#2F6174;color:#fff;}
     .quick-search ul{list-style-type:none;padding:0;margin:0;display:inline;}
     .quick-search li{display:inline-block;margin:5px 10px;}
-    .quick-search li a{background:rgb(159, 209, 233);color:#393939;padding:15px 25px;border-radius:100px;transition:all ease .5s;font-weight:600;display:inline-block;}
-    .quick-search li a:hover{background:#2F6174;color:#fff;text-decoration:none;}
+    .quick-search li a{background:#2F6174;color:#fff;padding:15px 25px;border-radius:100px;transition:all ease .5s;font-weight:400;display:inline-block;}
+    .quick-search li a:hover{background:rgb(159, 209, 233);color:#393939;text-decoration:none;}
     .quick-search h4{display:inline-block;margin:0 8px 0;vertical-align:middle;}
     .quick-search{margin-top:40px;text-align:center;}
     .section-title{font-size:3rem;margin-bottom:1.5rem;text-shadow:0px 0px 6px #fff;}

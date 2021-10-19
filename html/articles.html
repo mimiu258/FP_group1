@@ -29,7 +29,7 @@
         <div id="flexNav" class="headerGridArea">
             <ul class="regNav">
                 <li><a href="#" style="margin-left: 0;">Self-help</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="/html/articles.html">Articles</a></li>
                 <li><a href="#">Help line</a></li>
                 <li><a href="#"style="margin-right: 0;">About us</a></li>
             </ul>
@@ -48,7 +48,7 @@
         </div>
     </section>
 <!--breadcrumb-->
-    <nav aria-label="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: '>';"aria-label="breadcrumb">
         <ol class="breadcrumb">
             <i class="bi bi-house-door-fill"></i>
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
@@ -58,9 +58,10 @@
             <li class="breadcrumb-item active" aria-current="page">Articles</li>
         </ol>
     </nav>
+<main role="main">
 <!--I just make the border to see how large the hero section would be-->
     <section class="hero">
-        <h2> Articles</h2>
+        <h2 style="font-weight: 600; color:#2F6174;"> Articles</h2>
         <p> Here at MindLine we believe that raising awareness of mental health and wellness.</p>
         <div class="fp-tableCell">
             <div class="container">
@@ -70,17 +71,17 @@
                             <span class="search-icon"><i class="fa fa-search"></i></span>
             
                             <input type="search" id="" class="search-field av-input-hasicon"
-                             placeholder="Find yoga videos..." name="s">
+                             placeholder="Find articles.." name="s">
                             <input type="submit" class="button buttonsubmit" id="buttonsubmit" value="SEARCH">
                         </div>
                     </form>
                     <div class="quick-search">
-                        <h4 style="font-size: 15px; font-weight: bold;">Quick Search</h4>
+                        <h4 style="font-size: 15px; font-weight: 600;">Quick Search</h4>
                         <ul>
-                            <li><a href="#">Hatha</a></li>
-                            <li><a href="#">Restorative</a></li>
-                            <li><a href="#">Meditation</a></li>
-                            <li><a href="#">Vinyasa</a></li>
+                            <li><a href="#">Depression</a></li>
+                            <li><a href="#">Anxiety</a></li>
+                            <li><a href="#">Stress</a></li>
+                            <li><a href="#">Happiness</a></li>
                             
                         </ul>
                     </div>
@@ -88,7 +89,10 @@
             </div>
         </div>
     </section>
-    <h3 style="margin: 1% auto;padding: 20px; padding-left: 40px; font-size: 20px;">New Articles</h3>
+    <br><br><br>
+    <div class="containerhead">
+        <h3 style="font-size: 20px;color: #2F6174;">New Articles</h3>
+    </div>
     <div id="background">
         <div class="container">
             <div class="card">
@@ -144,7 +148,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
     <div class="pagination">
         <ul class="page-numbers">
             <li><span aria-current="page" class="page-numbers current">1</span></li>
@@ -166,6 +170,7 @@
         <button type="button" style=" margin: 10px 0;font-size: 15px; padding: 2%;border: 1px solid #2F6174;color: #2F6174; font-size: 15px; background-color: transparent;">
         Give Feedback
         </button>
+    </div>
     </div>
 <footer></footer>
 </body>
