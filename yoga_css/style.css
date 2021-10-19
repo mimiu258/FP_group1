@@ -74,7 +74,13 @@ li{
     justify-self: end;
 }
 /*Hero image*/
-
+.yogaBg{
+    border: none;
+    width: auto;
+    margin: 7% 0;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, 0.8);
+}
  
 .breadcrumb {
     display: flex;
