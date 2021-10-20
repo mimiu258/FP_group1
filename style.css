@@ -329,17 +329,17 @@ li{
     #meditaion{
         grid-area: meditaion;
         width: auto;
-        background-image: url('images/meditation.jpg');
+        background-image: url('images/Meditation.jpg');
     }
     #yoga{
         grid-area: yoga;
         width: auto;
-        background-image: url('/images/yoga.jpg');
+        background-image: url('images/yoga.jpg');
     }
     #music{
         grid-area: music;
         width: auto;
-        background-image: url('/images/music.jpeg');
+        background-image: url('images/Music.jpeg');
     }
     .grid-self-help{ 
             background-position: center;
