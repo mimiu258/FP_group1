@@ -5,6 +5,13 @@
 <style>
     
 </style>
+<div class="preloader">
+    <img src="images/preloadingImg.gif">
+</div> 
+<button id="backToTop" style="border: none;background-color: transparent;">
+   <img src="images/top.png" style="height:65px;">
+</button>
+<body>
 </head>
 <body>
     <!--header version 1-->
@@ -16,14 +23,28 @@
         </div>
         <div id="flexNav" class="headerGridArea">
             <ul class="regNav">
-                <li><a href="#" style="margin-left: 0;">Self-help</a></li>
+                    
+                <div class="dropdown">
+                        <button class="dropbtn" 
+                        style="border:none; background-color: transparent; 
+                        color: white; font-size: 15px;">
+                            Self-help</button>
+                        <div class="dropdown-content">
+                        <a href="#">Journaling</a>
+                        <a href="#">Yoga</a>
+                        <a href="#">Meditation</a>
+                        <a href="#">Music Collection</a>
+                        <a href="#">Podcast</a>  
+                        </div>
+                </div>    
+
                 <li><a href="#">Articles</a></li>
                 <li><a href="#">Help line</a></li>
                 <li><a href="#"style="margin-right: 0;">About us</a></li>
             </ul>
         </div>
         <div id="upperRight" class="headerGridArea">
-            <button type="button" class="getHelpBtn" style="background-color: transparent; border: 1px solid white; color: white;">
+            <button type="button" class="getHelpBtn">
                 Get professional help
             </button>
             <li><a href="#" style="font-size: 15px;">Sign-in</a></li>
@@ -49,7 +70,7 @@
             <p class="lowerWelcome">
                 Let us reduce the stress you’re suffering
             </p>
-            <button type="button" style="background-color: white; color: #2F6174; border: 1px solid #2F6174; padding: 2% 5%; margin: 15px;">Join us</button>
+            <button type="button" class="joinUsBtn">Join us</button>
         </div>
         <img class="upLeft" src="images/upperLeft.png">
         <img class="lowLeft" src="images/lowerLeft.png">
@@ -59,8 +80,8 @@
 <!--Daily quotes slider-->
 <div class="quote">
 <p style="color: #2F6174; margin-bottom: 20px;font-size: 25px; font-weight: medium;"> 
-    Daily Quotes</p>
-<div class="slider" style="height: 200px; border: 1px solid black;">
+    Daily Quote</p>
+<div class="quoteEx" style="height: 200px; border: 1px solid black;">
 </div>
 </div>
 
@@ -136,10 +157,14 @@ height: 270px;">
      </div>
 
      <div class="article">
-        <img class="articleImg" src="">
+        <img class="articleImg" src="images/article3.jpg">
         <div class="articleInfo">
-            <p class="title"></p>
-            <p class="description"></p>
+            <p class="title">
+                How to tell if your stress levels are normal or the sign of something more.            
+            </p>
+            <p class="description">
+                (CNN)-Stress is an everyday occurrence for most people, but too much of it could be signs of a deeper issue...
+            </p>
         <button type="button" class="readBtn">
                 Read article
         </button>
@@ -147,7 +172,7 @@ height: 270px;">
      </div>
      <a href="" style="font-size: 13px; color: #2F6174; text-align: center;">
     See all articles
-</a>
+    </a>
 </div>
 </div>
 
@@ -159,7 +184,7 @@ height: 270px;">
         <p style="font-size: 20px; color: white;">Mindline mobile app is coming soon
             <br>Woohoo!<br>
         </p> 
-        <button type="button" style="padding: 2%; color: white;border: 1px solid white; background-color: transparent;">
+        <button type="button" class="learnBtn">
         Learn more
         </button>
     </div>
@@ -172,7 +197,7 @@ height: 270px;">
 <br>and<br>
 We would love to improve ourself as well!
 </p>
-<button type="button" style=" margin: 10px 0;font-size: 15px; padding: 2%;border: 1px solid #2F6174;color: #2F6174; font-size: 15px; background-color: transparent;">
+<button type="button" class="feedbackBtn">
 Give Feedback
 </button>
 </div>
@@ -211,5 +236,7 @@ Give Feedback
     </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
