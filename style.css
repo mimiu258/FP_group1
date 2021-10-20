@@ -316,6 +316,7 @@ li{
     grid-template-areas: "meditation yoga music";
     align-items: center;
 }
+
 .grid-self-help{ 
     background-position: center;
     background-size: cover;
@@ -326,31 +327,33 @@ li{
     cursor: pointer;
     display: grid;
     align-content: end;}
+.linkbtn{
+    background-color: transparent;
+    border: 1px solid #2F6174;
+    margin: 10px;
+    padding: 2%;
+    font-size: 13px;
+    color: #2F6174;
+}
     #meditaion{
         grid-area: meditaion;
         width: auto;
+        position: relative;
         background-image: url('images/Meditation.jpg');
     }
     #yoga{
         grid-area: yoga;
         width: auto;
+        position: relative;
         background-image: url('images/yoga.jpg');
     }
     #music{
         grid-area: music;
         width: auto;
+        position: relative;
         background-image: url('images/Music.jpeg');
     }
-    .grid-self-help{ 
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 5px;
-            width: auto;
-            cursor: pointer;
-            display: grid;
-            align-content: end;
-        }
+ 
     .heading{
         width: auto;
         height: 100%;
@@ -367,6 +370,32 @@ li{
         margin: 7% 0;
         border-radius: 20px;
         background-color:rgba(255, 255, 255, 0.7);
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.3s;
+}
+.overlay:hover > * {
+    transform: translateY(0);
 }
 .getHelp{
     display: flex;
