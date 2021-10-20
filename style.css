@@ -364,7 +364,10 @@ li{
         width:50%
     }
 }
-
+.seeAll:hover{
+     text-decoration: underline;
+     color: #2F6174;
+}
 /*mobile app ad*/
 #flexAd{
     display:flex;
